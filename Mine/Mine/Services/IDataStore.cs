@@ -7,8 +7,8 @@ namespace Mine.Services
     public interface IDataStore<T>
     {
         Task<bool> CreateAsync(T item);
-        Task<bool> UpdateAync(T item);
-        Task<bool> DeleteItemAsync(string id);
+        Task<bool> UpdateItemAsync(T item);
+        Task<bool> DeleteAsync(string id);
         Task<T> ReadAsync(string id);
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
     }
