@@ -106,7 +106,7 @@ namespace Mine.ViewModels
                 return false;
 
             // Call to remove it from the Data Store
-            var result = await DataStore.UpdateItemAsync(data);
+            var result = await DataStore.UpdateAsync(data);
 
             var canExecute = LoadItemsCommand.CanExecute(null);
             LoadItemsCommand.Execute(null);
