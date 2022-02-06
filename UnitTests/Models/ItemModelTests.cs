@@ -17,6 +17,17 @@ namespace UnitTests.Models
 
             // Act
             var result = new ItemModel();
+            // Reset
+
+            // Assert 
+            Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public void ItemModel_Set_Get_Valid_Default_Should_Pass()
+        {
+            // Act
+            var result = new ItemModel();
             result.Description = "Description";
             result.Id = "ID";
             result.Text = "Text";
