@@ -26,6 +26,8 @@ namespace UnitTests.Models
         [Test]
         public void ItemModel_Set_Get_Valid_Default_Should_Pass()
         {
+            // Arrange
+
             // Act
             var result = new ItemModel();
             result.Description = "Description";
@@ -40,6 +42,20 @@ namespace UnitTests.Models
             Assert.AreEqual("ID", result.Id);
             Assert.AreEqual("Text", result.Text);
             Assert.AreEqual(1, result.Value);
+        }
+
+        [Test]
+        public void ItemModel_Get_Valid_Defaule_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            var result = new ItemModel();
+
+            // Reset
+
+            // Assert 
+            Assert.AreEqual(0, result.Value);
         }
     }
 }
